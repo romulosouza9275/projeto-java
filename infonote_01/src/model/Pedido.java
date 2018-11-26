@@ -36,4 +36,12 @@ public void setSituacao(String situacao) {
 	this.situacao = situacao;
 }
 String situacao;
+public Pedido(int numero, String dataEmissao, String formaDePagamento, double valortotal, String situacao) {
+	super();
+	this.numero = numero;
+	this.dataEmissao = dataEmissao;
+	this.formaDePagamento = formaDePagamento;
+	this.valortotal = valortotal;
+	this.situacao = situacao;
+}
 }
