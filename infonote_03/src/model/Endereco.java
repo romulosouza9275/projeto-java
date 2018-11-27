@@ -1,13 +1,13 @@
 package model;
 
-public class Endereco {
-	String logradouro;
-	String numero;
-	String comprimento;
-	String bairro;
-	String cidade;
+class Endereco {
+	private String logradouro;
+	private String numero;
+	private String comprimento;
+	private String bairro;
+	private String cidade;
 
-	public String getLogradouro() {
+	private String getLogradouro() {
 		return logradouro;
 	}
 
