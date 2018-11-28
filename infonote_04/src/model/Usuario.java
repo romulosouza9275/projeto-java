@@ -1,5 +1,6 @@
 package model;
-
+// import Usuario.user;
+// boolean logado = false; 
 class Usuario {
 
 	int matricula;
@@ -55,6 +56,48 @@ class Usuario {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
-	}
+}
+public void mostrarMenu() {
+    System.out.println("===================================================");
+	System.out.println("      infonote - Se não é Info não vendemos.       ");
+	System.out.println("===================================================");
+	System.out.println("1 - login");
+	System.out.println("2 - Cadastrar Cliente");
+	System.out.println("3 - Buscar notebook");
+	System.out.println("4 - Inserir Notebook no carrinho");
+	System.out.println("5 - Remover Notebook no carrinho");
+	System.out.println("6 - Ver Carrinho");
+	System.out.println("7 - Efetuar Comprar");
+	System.out.println("8 - sair");
+	
+public void efetuarLogin () {
+    String login, senha;
+    login = Teclado.lerTexto("digite login: ");
+    senha = Teclado.lerTexto("digite senha: ");
+   
+    if(login.equals("admin") && senha.equals("1234")) {
+    System.out.println(" login efetuado com sucesso.");
+    logado = true;
+    } else {
+    System.out.println("login ou senha inválido.");
+    efetuarLogin();
+    }
+}
+public void cadastrarUsuario () {
+	System.out.println("===================================================");
+	System.out.println("          infonote - cadastro usuários.            ");
+}   System.out.println("===================================================");
+    
+    System.out.println(user);
+    
+public void buscarNotebook() {
+    System.out.println("buscarNotebook - Em construção");
 
+}
+public void manterCarrinho() {
+	System.out.println("manterCarrinho - Em construção");
+
+public void efetuarCompra() {
+	System.out.println("efetuarCompra - Em contrução ");
+}
 }
