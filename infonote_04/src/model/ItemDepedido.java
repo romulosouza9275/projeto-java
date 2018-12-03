@@ -1,6 +1,9 @@
 package model;
 
 public class ItemDepedido {
+	int qtde;
+double subtotal;
+
 public int getQtde() {
 		return qtde;
 	}
@@ -13,6 +16,16 @@ public int getQtde() {
 	public void setSubtotal(double subtotal) {
 		this.subtotal = subtotal;
 	}
-int qtde;
-double subtotal;
+	public ItemDepedido(int qtde, double subtotal) {
+		super();
+		this.qtde = qtde;
+		this.subtotal = subtotal;
+	
+		public ItemDepedido() {
+		System.out.println("qtde : " + this.qtde);
+		System.out.println("subtotal : " + this.subtotal);
+		
+		
+	}
+
 }

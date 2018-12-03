@@ -1,7 +1,6 @@
 package model;
-// import Usuario.user;
-// boolean logado = false; 
-class Usuario {
+
+public class Usuario {
 
 	int matricula;
 	private String login;
@@ -9,6 +8,7 @@ class Usuario {
 	private String nome;
 	private String email;
 	private String telefone;
+
 
 	private int getMatricula() {
 		return matricula;
@@ -56,48 +56,29 @@ class Usuario {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
-}
-public void mostrarMenu() {
-    System.out.println("===================================================");
-	System.out.println("      infonote - Se não é Info não vendemos.       ");
-	System.out.println("===================================================");
-	System.out.println("1 - login");
-	System.out.println("2 - Cadastrar Cliente");
-	System.out.println("3 - Buscar notebook");
-	System.out.println("4 - Inserir Notebook no carrinho");
-	System.out.println("5 - Remover Notebook no carrinho");
-	System.out.println("6 - Ver Carrinho");
-	System.out.println("7 - Efetuar Comprar");
-	System.out.println("8 - sair");
+	}
+
+public Usuario() {
 	
-public void efetuarLogin () {
-    String login, senha;
-    login = Teclado.lerTexto("digite login: ");
-    senha = Teclado.lerTexto("digite senha: ");
-   
-    if(login.equals("admin") && senha.equals("1234")) {
-    System.out.println(" login efetuado com sucesso.");
-    logado = true;
-    } else {
-    System.out.println("login ou senha inválido.");
-    efetuarLogin();
-    }
 }
-public void cadastrarUsuario () {
-	System.out.println("===================================================");
-	System.out.println("          infonote - cadastro usuários.            ");
-}   System.out.println("===================================================");
-    
-    System.out.println(user);
-    
-public void buscarNotebook() {
-    System.out.println("buscarNotebook - Em construção");
 
+public Usuario(int matricula, String login, String senha, String nome, String email, String telefone) {
+	super();
+	this.matricula = matricula;
+	this.login = login;
+	this.senha = senha;
+	this.nome = nome;
+	this.email = email;
+	this.telefone = telefone;
+	
 }
-public void manterCarrinho() {
-	System.out.println("manterCarrinho - Em construção");
+public void mostar() {
 
-public void efetuarCompra() {
-	System.out.println("efetuarCompra - Em contrução ");
+System.out.println("\n\nUsuário\n");
+System.out.println("matricula : " + this. matricula);
+System.out.println("login : " + this.login);
+System.out.println("senha : " + this.senha);
+System.out.println("email : " + this.email);
+System.out.println("telefone : "+ this.telefone);
 }
 }

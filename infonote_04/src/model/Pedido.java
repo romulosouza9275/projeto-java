@@ -1,6 +1,7 @@
 package model;
 
 public class Pedido {
+String situacao;
 int numero;
  String dataEmissao;
  String formaDePagamento;
@@ -35,5 +36,18 @@ public String getSituacao() {
 public void setSituacao(String situacao) {
 	this.situacao = situacao;
 }
-String situacao;
+public Pedido() {
+	super();
+	this.situacao = situacao;
+	this.numero = numero;
+	this.dataEmissao = dataEmissao;
+	this.formaDePagamento = formaDePagamento;
+	this.valortotal = valortotal;
+}
+System.out.println(" situacao: " + this.situacao);
+System.out.println("numero : " + this.numero);
+System.out.println("dataEmissao : " + this.dataEmissao);
+System.out.println("formaDePagamento : " + this.formaDePagamento);
+System.out.println("valortotal : "+ this.valortotal);
+
 }

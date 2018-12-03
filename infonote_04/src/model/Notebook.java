@@ -65,4 +65,15 @@ public class Notebook {
 	private double precoUnitario;
 	private String figura;
 	private String dataCadastro;
+
+	public void mostar() {
+
+		
+		System.out.println(" modelo : " + this.modelo);
+		System.out.println("descricao : " + this.descricao);
+		System.out.println("estoque : " + this.estoque );
+		System.out.println("precoUnitario : " + this.precoUnitario);
+		System.out.println("figura : "+ this.figura);
+		System.out.println("dataCadastro : "+ this.dataCadastro);
+
 }

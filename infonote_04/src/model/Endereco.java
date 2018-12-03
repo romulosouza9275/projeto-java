@@ -6,7 +6,9 @@ class Endereco {
 	private String comprimento;
 	private String bairro;
 	private String cidade;
-
+	private String estado;
+	private String cep;
+	
 	private String getLogradouro() {
 		return logradouro;
 	}
@@ -62,7 +64,32 @@ class Endereco {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
+	
+	public Endereco() {
 
-	String estado;
-	String cep;
+	public Endereco(String logradouro, String numero, String comprimento, String bairro, String cidade, String estado,
+			String cep) {
+		super();
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.comprimento = comprimento;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+	
+		public void mostar() {
+			//Mostrar usuário
+			System.out.println("\n\nUsuário\n");
+			System.out.println("numero : " + this.numero);
+			System.out.println("comprimento : " + this.comprimento);
+			System.out.println("bairro : " + this.bairro);
+			System.out.println("cidade : " + this.cidade);
+			System.out.println("estado : "+ this.estado);
+			System.out.println("cep : "+ this.cep);
+	
+	}
+	
+
+	
 }
